@@ -9,7 +9,7 @@ public class Change {
         for (int i = 0; i < s_arr_in.length ; i++) {
 
             mvarr[i] = Integer.parseInt(s_arr_in[s_arr_in.length - 1 - i]);
-            System.out.println(i+" : "+mvarr[i]);
+//            System.out.println(i+" : "+mvarr[i]);
 
         }
 
@@ -25,8 +25,7 @@ public class Change {
 
             mvarr[i] =int_in[int_in.length - 1 - i];
 
-
-            System.out.println(i+" : "+mvarr[i]);
+//            System.out.println(i+" : "+mvarr[i]);
 
         }
         return mvarr;

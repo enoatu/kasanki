@@ -23,17 +23,6 @@ public class Zenkasan {
         int kuriagari = calc.or(kuriagari1, kuriagari2);//1
 
         int[] arr_zen = {wa2,kuriagari};
-//        int s = calc.xor(a, s);//1
-//        int cc = calc.or(b, calc.and(a, input3[0));//1
-
-//        System.out.println("a :" + a);
-//        System.out.println("b :" + b);
-//
-//        System.out.println("s :" + s);
-//        System.out.println("cc :" + cc);
-
-
-//        hankasanki(input, input2);
 
         return arr_zen;
     }
