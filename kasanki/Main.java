@@ -5,7 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("1:2進数を入力して下さい。");
+        try{
+            System.out.println("1:2進数を入力して下さい。");
 
         Scanner scan1 = new Scanner(System.in);
         String s_in1 = scan1.next();//入力値取得
@@ -20,6 +21,8 @@ public class Main {
         String s_in2 = scan2.next();//入力値取得
 
         int input2[] =(int[])Change.changeInput(0+s_in2);//入力値を逆順にし、int配列へ
+
+
 
         MainCalc mainCalc = new MainCalc();
         int[] arr_result= (int[]) mainCalc.calc(input1,input2);
@@ -48,6 +51,10 @@ public class Main {
             System.out.println("overflow : なし");
             System.out.println("result : "+s_result);
         }
+        }catch (Exception e){
+            System.out.println("正しく入力してください");
+        }
+
 
     }
 }
