@@ -25,13 +25,35 @@ public class Main {
 
         MainCalc mainCalc = new MainCalc();
         int[] arr_result= (int[]) mainCalc.calc(input1,input2);
-        Change.sort(arr_result);//順番入れ替え
-        String s_result=null;
-        for (int Arr_result : arr_result) {//結合
-            s_result += String.valueOf(Arr_result);//intからstring
+        int[] sorted_result= (int[]) Change.sort(arr_result);//順番入れ替え
+
+        String s_result="";
+
+
+
+        if (sorted_result[0]==1){//overflow
+
+            for (int i=0;i<arr_result.length;i++) {//結合
+                s_result+= sorted_result[i];//intからstring
+                System.out.println(i+" : "+sorted_result[i]);
+
+            }
+
+        System.out.println("overflow : "+sorted_result[0]);
+            System.out.println("result : "+s_result);
+        }else{
+
+            for (int i=1;i<arr_result.length;i++) {//結合
+                s_result+= sorted_result[i];//intからstring
+                System.out.println(i+" : "+sorted_result[i]);
+
+            }
+
+            System.out.println("overflow : なし");
+            System.out.println("result : "+s_result);
         }
-        System.out.println("overflow : "+arr_result[0]);
-        System.out.println("result : "+s_result);
+
+
 //
 //
 //        if (result.length > input1.length){

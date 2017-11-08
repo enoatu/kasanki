@@ -6,7 +6,7 @@ public class MainCalc {
         int[] input1 = (int[]) o_input1;
         int[] input2 = (int[]) o_input2;//配列として取得
 
-        int[] result = new int[input1.length+1];
+        int[] result = new int[input1.length];
         int overflow =0;//initialize
 
 //一桁目は半加算
