@@ -17,22 +17,25 @@ public class MainCalc {
         int kuriagari=arr_result0[1];//繰り上がり
 
         result[0]=wa0;//push
-//        System.out.println("一桁目は半加算");
-//        System.out.println("0 : "+result[0]);
-
+        System.out.println("一桁目は半加算");
+        System.out.println("");
+        System.out.println("[番号:数値]");
+        System.out.println("|"+"0 : "+result[0]+"|");
+        System.out.println("");
 //以降全加算
-//        System.out.println("以降全加算");
+        System.out.println("以降全加算");
+        System.out.println("");
+
         for (int i=1;i<input1.length;i++){
             Zenkasan zenkasan = new Zenkasan();//全加算
             int[] arr_result
                     = (int[]) zenkasan.zenkasan
                     (input1[i],input2[i],kuriagari);//
            result[i]= arr_result[0];//和をpush
-//        System.out.println(i+" : "+result[i]);
+        System.out.println("|"+i+" : "+result[i]+"|");
            kuriagari=arr_result[1];
 
         }
-
 
 return result;
     }
